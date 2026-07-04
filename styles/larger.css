@@ -1,0 +1,26 @@
+@media screen and (min-width: 700px) {
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+  }
+
+  nav a {
+    border-top: none;
+    border-radius: 4px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .course-card {
+    flex: 1 1 160px;
+  }
+}
