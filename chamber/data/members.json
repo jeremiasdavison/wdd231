@@ -1,0 +1,76 @@
+{
+  "members": [
+    {
+      "name": "FERREMAT",
+      "address": "Perú 590, 3° B, C1068AAB, CABA",
+      "phone": "(011) 4342-6484",
+      "website": "https://www.ferremat.com.ar",
+      "image": "images/ferremat.svg",
+      "membershipLevel": 3,
+      "tagline": "Argentina's first hardware store chain"
+    },
+    {
+      "name": "Buenos Aires Bakery",
+      "address": "Av. Gral. Las Heras 3501, Palermo, CABA",
+      "phone": "(011) 4807-9507",
+      "website": "https://www.buenosairesbakery.com.ar",
+      "image": "images/buenos-aires-bakery.svg",
+      "membershipLevel": 2,
+      "tagline": "Bakery and pastry shop in Palermo"
+    },
+    {
+      "name": "Estudio Nunes & Asociados",
+      "address": "Av. Paseo Colón 275, Piso 11, CABA",
+      "phone": "(011) 4331-1525",
+      "website": "https://estudionunes.com.ar",
+      "image": "images/estudio-nunes.svg",
+      "membershipLevel": 3,
+      "tagline": "Full-service legal counsel"
+    },
+    {
+      "name": "Ardha Yoga Estudio",
+      "address": "Guatemala 5011, Palermo, C1425BUS, CABA",
+      "phone": "+54 9 11 6998-8576",
+      "website": "https://ardhayoga.com.ar",
+      "image": "images/ardha-yoga.svg",
+      "membershipLevel": 1,
+      "tagline": "Hot Yoga, Yin Yoga, Hatha Yoga, and Hiit Pilates"
+    },
+    {
+      "name": "Cuervo Café",
+      "address": "El Salvador 4580, Palermo Soho, CABA",
+      "phone": "Phone not listed",
+      "website": "https://www.instagram.com/cuervocafe",
+      "image": "images/cuervo-cafe.svg",
+      "membershipLevel": 2,
+      "tagline": "Specialty coffee, roasted in-house"
+    },
+    {
+      "name": "Taller Mecánico AN-DI",
+      "address": "Matheu 1895, Parque Patricios, CABA",
+      "phone": "(011) 4941-8888",
+      "website": "https://www.mecanicaandi.com",
+      "image": "images/mecanica-andi.svg",
+      "membershipLevel": 1,
+      "tagline": "Over 60 years of complete auto repair"
+    },
+    {
+      "name": "Veterinaria Honorio",
+      "address": "Av. Honorio Pueyrredón 315, Caballito, C1405BAA, CABA",
+      "phone": "+54 11 4903-7421",
+      "website": "https://www.veterinariahonorio.com.ar",
+      "image": "images/veterinaria-honorio.svg",
+      "membershipLevel": 3,
+      "tagline": "Veterinary care since the year 2000"
+    },
+    {
+      "name": "Estudio Piacentini",
+      "address": "Camarones 2950, C1416EDF, CABA",
+      "phone": "(011) 4585-3779",
+      "website": "https://www.estudiopiacentini.com.ar",
+      "image": "images/estudio-piacentini.svg",
+      "membershipLevel": 2,
+      "tagline": "Accounting and tax advice for small business"
+    }
+  ]
+}

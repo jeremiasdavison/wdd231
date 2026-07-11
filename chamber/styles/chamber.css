@@ -1,0 +1,128 @@
+.directory-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#member-count {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-toggle button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.view-toggle button:hover {
+  background-color: var(--primary-color);
+}
+
+.view-toggle button.active {
+  background-color: var(--primary-color);
+  outline: 2px solid var(--accent-color);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.list-view {
+  flex-direction: column;
+}
+
+.card {
+  flex: 1 1 220px;
+  border: 1px solid #d8d8d0;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.list-view .card {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+}
+
+.list-view .card img {
+  display: none;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.card .tagline {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.card .badge {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+}
+
+.list-view .card .badge {
+  align-self: center;
+}
+
+.badge.member {
+  background-color: #d7e6f2;
+  color: #12324a;
+}
+
+.badge.silver {
+  background-color: #dfe3e6;
+  color: #2c3438;
+}
+
+.badge.gold {
+  background-color: #f7dfa8;
+  color: #5c4406;
+}
+
+.card a.website-link {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.card a.website-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    flex: 1 1 240px;
+  }
+}
