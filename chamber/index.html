@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meridian Falls Chamber of Commerce home page. Discover local events, current weather, and featured member businesses.">
+  <meta name="author" content="Jeremias Davison">
+  <title>Home | Meridian Falls Chamber of Commerce</title>
+
+  <meta property="og:title" content="Home | Meridian Falls Chamber of Commerce">
+  <meta property="og:description" content="Meridian Falls Chamber of Commerce home page. Discover local events, current weather, and featured member businesses.">
+  <meta property="og:image" content="https://jeremiasdavison.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/small.css">
+  <link rel="stylesheet" href="../styles/larger.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="../images/logo.svg" alt="Site logo" class="logo">
+    <span class="site-name">Meridian Falls Chamber</span>
+    <button id="menu-button" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="current">Chamber</a>
+      <a href="../final/index.html">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="images/hero.svg" alt="Meridian Falls skyline" class="hero-image">
+      <a href="join.html" class="cta-button">Join the Chamber</a>
+    </section>
+
+    <div class="home-grid">
+      <section id="events">
+        <h2>Current Events</h2>
+        <ul class="event-list">
+          <li>
+            <span class="event-date">Aug 12</span>
+            <span class="event-title">Chamber Networking Breakfast</span>
+          </li>
+          <li>
+            <span class="event-date">Aug 20</span>
+            <span class="event-title">Small Business Workshop</span>
+          </li>
+          <li>
+            <span class="event-date">Sep 03</span>
+            <span class="event-title">Local Vendor Market</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="weather">
+        <h2>Weather</h2>
+        <div id="current-weather"></div>
+        <ul id="forecast" class="forecast-list"></ul>
+      </section>
+    </div>
+
+    <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-cards" class="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/jeremiasdavison" target="_blank" rel="noopener">
+        <img src="../images/github.svg" alt="GitHub profile link">
+      </a>
+      <a href="https://www.linkedin.com/in/jerem%C3%ADasdavison/" target="_blank" rel="noopener">
+        <img src="../images/linkedin.svg" alt="LinkedIn profile link">
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> Meridian Falls Chamber of Commerce, Meridian Falls, ID</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
