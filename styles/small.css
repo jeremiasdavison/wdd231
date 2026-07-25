@@ -14,7 +14,7 @@ img {
   --secondary-color: #267373;
   --accent-color: #f2a154;
   --light-color: #f7f7f2;
-  --text-color: #222;
+  --text-color: #222222;
   --completed-color: #dff5e1;
 }
 
@@ -37,7 +37,7 @@ header {
   gap: 0.5rem 1rem;
   padding: 1rem;
   background-color: var(--primary-color);
-  color: white;
+  color: #ffffff;
 }
 
 .logo {
@@ -54,7 +54,7 @@ header {
 #menu-button {
   background: none;
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -71,9 +71,9 @@ nav.open {
 }
 
 nav a {
-  color: white;
+  color: #ffffff;
   padding: 0.75rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid #ffffff26;
 }
 
 nav a:hover,
@@ -86,7 +86,7 @@ main {
 }
 
 section {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -116,7 +116,7 @@ h2 {
 
 .filter-btn {
   background-color: var(--secondary-color);
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -162,7 +162,7 @@ footer {
   padding: 1rem;
   text-align: center;
   background-color: var(--primary-color);
-  color: white;
+  color: #ffffff;
 }
 
 .social {
