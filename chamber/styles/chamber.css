@@ -228,3 +228,174 @@
     font-size: 1.1rem;
   }
 }
+
+/* Join page */
+
+.join-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+#join-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+#join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+#join-form input,
+#join-form select,
+#join-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #c7c7bd;
+  border-radius: 4px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+#join-form button[type="submit"] {
+  align-self: flex-start;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#join-form button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+.membership-cards {
+  flex-direction: column;
+}
+
+.level-card {
+  flex: 1 1 auto;
+  align-items: flex-start;
+}
+
+.level-card .info-link {
+  align-self: flex-start;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.level-card .info-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-enter {
+  opacity: 0;
+  animation: cardEnter 0.6s ease-out forwards;
+}
+
+@media screen and (min-width: 700px) {
+  .join-layout {
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  #join-form {
+    flex: 2;
+  }
+
+  #membership-cards {
+    flex: 1;
+  }
+}
+
+/* Modals */
+
+dialog.benefits-modal {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+}
+
+dialog.benefits-modal::backdrop {
+  background-color: rgba(27, 58, 75, 0.6);
+}
+
+dialog.benefits-modal h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+dialog.benefits-modal .modal-price {
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+dialog.benefits-modal ul {
+  margin: 0 0 1rem 1.2rem;
+}
+
+dialog.benefits-modal .modal-close {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+dialog.benefits-modal .modal-close:hover {
+  background-color: var(--primary-color);
+}
+
+/* Thank you page */
+
+#application-summary {
+  margin-top: 1rem;
+}
+
+#application-summary dt {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 0.75rem;
+}
+
+#application-summary dd {
+  margin-left: 0;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--light-color);
+  border-radius: 4px;
+}

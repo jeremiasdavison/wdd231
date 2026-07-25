@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply for membership with the Meridian Falls Chamber of Commerce. Choose from NP, Bronze, Silver, and Gold membership levels.">
+  <meta name="author" content="Jeremias Davison">
+  <title>Join | Meridian Falls Chamber of Commerce</title>
+
+  <meta property="og:title" content="Join | Meridian Falls Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership with the Meridian Falls Chamber of Commerce. Choose from NP, Bronze, Silver, and Gold membership levels.">
+  <meta property="og:image" content="https://jeremiasdavison.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/small.css">
+  <link rel="stylesheet" href="../styles/larger.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="../images/logo.svg" alt="Site logo" class="logo">
+    <span class="site-name">Meridian Falls Chamber</span>
+    <button id="menu-button" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Chamber</a>
+      <a href="../final/index.html">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <section id="join-form">
+        <h2>Membership Application</h2>
+        <form action="thankyou.html" method="get">
+
+          <label>First Name
+            <input type="text" name="firstName" title="Applicant's first name" autocomplete="given-name" required>
+          </label>
+
+          <label>Last Name
+            <input type="text" name="lastName" title="Applicant's last name" autocomplete="family-name" required>
+          </label>
+
+          <label>Organizational Title
+            <input type="text" name="orgTitle" title="Your title within your organization" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+          </label>
+
+          <label>Email Address
+            <input type="email" name="email" title="A valid email address" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+
+          <label>Mobile Phone
+            <input type="tel" name="mobilePhone" title="Your mobile phone number" autocomplete="tel" required>
+          </label>
+
+          <label>Business/Organization Name
+            <input type="text" name="businessName" title="The name of your business or organization" autocomplete="organization" required>
+          </label>
+
+          <label>Membership Level
+            <select name="membershipLevel" title="Choose a membership level">
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>Business/Organization Description
+            <textarea name="businessDescription" title="A short description of your business or organization" rows="4"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+
+      <section id="membership-cards">
+        <h2>Membership Levels</h2>
+        <div class="cards membership-cards">
+
+          <div class="card level-card">
+            <h3>NP Membership</h3>
+            <p class="tagline">Free for non-profit organizations</p>
+            <a href="#np-modal" class="info-link" data-modal="np-modal">Learn More</a>
+          </div>
+
+          <div class="card level-card">
+            <h3>Bronze Membership</h3>
+            <p class="tagline">A great starting point for small businesses</p>
+            <a href="#bronze-modal" class="info-link" data-modal="bronze-modal">Learn More</a>
+          </div>
+
+          <div class="card level-card">
+            <h3>Silver Membership</h3>
+            <p class="tagline">More visibility and more perks</p>
+            <a href="#silver-modal" class="info-link" data-modal="silver-modal">Learn More</a>
+          </div>
+
+          <div class="card level-card">
+            <h3>Gold Membership</h3>
+            <p class="tagline">Our top tier of benefits</p>
+            <a href="#gold-modal" class="info-link" data-modal="gold-modal">Learn More</a>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np-modal" class="benefits-modal">
+      <h3>NP Membership</h3>
+      <p class="modal-price">No fee</p>
+      <ul>
+        <li>Listing in the online member directory</li>
+        <li>Monthly chamber newsletter</li>
+        <li>Access to networking events</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal" class="benefits-modal">
+      <h3>Bronze Membership</h3>
+      <p class="modal-price">Entry-level paid membership</p>
+      <ul>
+        <li>Everything in NP Membership</li>
+        <li>One free ticket to a quarterly event</li>
+        <li>Basic listing badge on your directory card</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal" class="benefits-modal">
+      <h3>Silver Membership</h3>
+      <p class="modal-price">Mid-tier membership</p>
+      <ul>
+        <li>Everything in Bronze Membership</li>
+        <li>Rotating spotlight placement on the home page</li>
+        <li>Discounted tickets to chamber workshops</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal" class="benefits-modal">
+      <h3>Gold Membership</h3>
+      <p class="modal-price">Our top tier of benefits</p>
+      <ul>
+        <li>Everything in Silver Membership</li>
+        <li>Priority home page spotlight placement</li>
+        <li>Unlimited event tickets and workshop discounts</li>
+      </ul>
+      <button type="button" class="modal-close">Close</button>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/jeremiasdavison" target="_blank" rel="noopener">
+        <img src="../images/github.svg" alt="GitHub profile link">
+      </a>
+      <a href="https://www.linkedin.com/in/jerem%C3%ADasdavison/" target="_blank" rel="noopener">
+        <img src="../images/linkedin.svg" alt="LinkedIn profile link">
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> Meridian Falls Chamber of Commerce, Meridian Falls, ID</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

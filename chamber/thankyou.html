@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meridian Falls Chamber of Commerce home page. Discover local events, current weather, and featured member businesses.">
+  <meta name="description" content="Thank you for applying for membership with the Meridian Falls Chamber of Commerce.">
   <meta name="author" content="Jeremias Davison">
-  <title>Home | Meridian Falls Chamber of Commerce</title>
+  <title>Thank You | Meridian Falls Chamber of Commerce</title>
 
-  <meta property="og:title" content="Home | Meridian Falls Chamber of Commerce">
-  <meta property="og:description" content="Meridian Falls Chamber of Commerce home page. Discover local events, current weather, and featured member businesses.">
+  <meta property="og:title" content="Thank You | Meridian Falls Chamber of Commerce">
+  <meta property="og:description" content="Thank you for applying for membership with the Meridian Falls Chamber of Commerce.">
   <meta property="og:image" content="https://jeremiasdavison.github.io/wdd231/chamber/images/og-image.png">
-  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/chamber/index.html">
+  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/chamber/thankyou.html">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/x-icon" href="../images/logo.svg">
@@ -24,8 +24,7 @@
 
   <script src="../scripts/navigation.js" defer></script>
   <script src="../scripts/date.js" defer></script>
-  <script src="scripts/config.js" defer></script>
-  <script src="scripts/home.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
   <header>
@@ -34,48 +33,37 @@
     <button id="menu-button" aria-label="Toggle navigation menu">&#9776;</button>
     <nav id="primary-nav">
       <a href="../index.html">Home</a>
-      <a href="index.html" class="current">Chamber</a>
+      <a href="index.html">Chamber</a>
       <a href="../final/index.html">Final</a>
     </nav>
   </header>
 
   <main>
-    <h1>Home</h1>
+    <h1>Thank You</h1>
 
-    <section id="hero">
-      <img src="images/hero.svg" alt="Meridian Falls skyline" class="hero-image">
-      <a href="join.html" class="cta-button">Join the Chamber</a>
-    </section>
+    <section id="thankyou">
+      <h2>Your application has been received</h2>
+      <p>Thank you for applying for membership with the Meridian Falls Chamber of Commerce. A member of our team will reach out to you shortly.</p>
 
-    <div class="home-grid">
-      <section id="events">
-        <h2>Current Events</h2>
-        <ul class="event-list">
-          <li>
-            <span class="event-date">Aug 12</span>
-            <span class="event-title">Chamber Networking Breakfast</span>
-          </li>
-          <li>
-            <span class="event-date">Aug 20</span>
-            <span class="event-title">Small Business Workshop</span>
-          </li>
-          <li>
-            <span class="event-date">Sep 03</span>
-            <span class="event-title">Local Vendor Market</span>
-          </li>
-        </ul>
-      </section>
+      <dl id="application-summary">
+        <dt>First Name</dt>
+        <dd id="out-firstName"></dd>
 
-      <section id="weather">
-        <h2>Weather</h2>
-        <div id="current-weather"></div>
-        <ul id="forecast" class="forecast-list"></ul>
-      </section>
-    </div>
+        <dt>Last Name</dt>
+        <dd id="out-lastName"></dd>
 
-    <section id="spotlights">
-      <h2>Member Spotlights</h2>
-      <div id="spotlight-cards" class="cards"></div>
+        <dt>Email</dt>
+        <dd id="out-email"></dd>
+
+        <dt>Mobile Phone</dt>
+        <dd id="out-mobilePhone"></dd>
+
+        <dt>Business/Organization Name</dt>
+        <dd id="out-businessName"></dd>
+
+        <dt>Submitted On</dt>
+        <dd id="out-timestamp"></dd>
+      </dl>
     </section>
   </main>
 
