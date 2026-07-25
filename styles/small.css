@@ -27,7 +27,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color);
 }
 
 header {
@@ -52,7 +52,7 @@ header {
 }
 
 #menu-button {
-  background: none;
+  background-color: var(--primary-color);
   border: none;
   color: #ffffff;
   font-size: 1.8rem;
