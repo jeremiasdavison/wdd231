@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan document for Wild Patagonia, a travel guide to Argentine Patagonia, created for WDD 231.">
+  <meta name="author" content="Jeremias Davison">
+  <title>Site Plan | Wild Patagonia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Site Plan: Wild Patagonia</h1>
+    <p class="subtitle">WDD 231 &mdash; Individual Project</p>
+  </header>
+
+  <main>
+
+    <section id="site-name">
+      <h2>1. Site Name</h2>
+      <p><strong>Wild Patagonia</strong></p>
+      <p>The name was chosen because it is short, easy to remember, and immediately communicates the subject of the site: the untamed, natural beauty of the Argentine Patagonia region. It works well in English for an international audience planning a trip and pairs naturally with imagery of mountains, glaciers, and wildlife.</p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>2. Site Purpose</h2>
+      <p>Wild Patagonia exists to give travelers a simple, reliable guide to Argentine Patagonia. The site provides:</p>
+      <ul>
+        <li>Overviews of the most visited destinations, including Bariloche, El Calafate, Ushuaia, and El Chalten.</li>
+        <li>Details on the main attractions in each destination, such as Perito Moreno Glacier, Fitz Roy, and Nahuel Huapi Lake.</li>
+        <li>Practical travel information: weather patterns, the best time of year to visit, and how to get to each destination.</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>3. Scenarios</h2>
+      <p>Scenario questions that reflect what a target user would ask when visiting the site:</p>
+      <ol>
+        <li>"I'm planning a trip to see Perito Moreno Glacier &mdash; what is the best time of year to go, and how do I get to El Calafate?"</li>
+        <li>"I want to hike near Fitz Roy &mdash; what trails are available around El Chalten, and what should I know before I go?"</li>
+      </ol>
+    </section>
+
+    <section id="color-schema">
+      <h2>4. Color Schema</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Color</th>
+            <th>Swatch</th>
+            <th>Hex</th>
+            <th>Where it is used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Glacier Blue</td>
+            <td><span class="swatch swatch-blue"></span></td>
+            <td>#1B4B6B</td>
+            <td>Header background, navigation, section headings</td>
+          </tr>
+          <tr>
+            <td>Sunset Orange</td>
+            <td><span class="swatch swatch-orange"></span></td>
+            <td>#E8763C</td>
+            <td>Accent color for buttons, links, and highlights</td>
+          </tr>
+          <tr>
+            <td>Andes Stone</td>
+            <td><span class="swatch swatch-stone"></span></td>
+            <td>#4A4A48</td>
+            <td>Body text color</td>
+          </tr>
+          <tr>
+            <td>Snow White</td>
+            <td><span class="swatch swatch-white"></span></td>
+            <td>#F7F5F0</td>
+            <td>Page and card background</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="color-use">
+      <h2>5. Color Schema Use in Document</h2>
+      <p>This document itself uses the four colors defined above: Glacier Blue for the header and headings, Sunset Orange for links and accents, Andes Stone for body text, and Snow White for the page background, demonstrating how the palette will apply across the final site.</p>
+    </section>
+
+    <section id="typography">
+      <h2>6. Typography Named and Used</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Font</th>
+            <th>Role</th>
+            <th>Where and how it is applied</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Playfair Display</td>
+            <td>Heading font</td>
+            <td>Used for all headings (h1, h2, h3) to give the site an elegant, travel-magazine feel. Applied to this document's headings.</td>
+          </tr>
+          <tr>
+            <td>Lato</td>
+            <td>Body font</td>
+            <td>Used for paragraphs, lists, and table text for clean readability on both mobile and desktop. Applied to this document's body copy.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="wireframes">
+      <h2>7. Wireframe</h2>
+      <p>Home page layout for a narrow (mobile) view and a wider (desktop) view.</p>
+
+      <div class="wireframe-wrap">
+        <figure class="wireframe wireframe-mobile">
+          <figcaption>Mobile</figcaption>
+          <div class="wf-box wf-header">Logo + &#9776; Menu</div>
+          <div class="wf-box wf-hero">Hero Image<br>+ Headline</div>
+          <div class="wf-box wf-card">Destination Card</div>
+          <div class="wf-box wf-card">Destination Card</div>
+          <div class="wf-box wf-card">Destination Card</div>
+          <div class="wf-box wf-footer">Footer</div>
+        </figure>
+
+        <figure class="wireframe wireframe-desktop">
+          <figcaption>Wider View (Desktop)</figcaption>
+          <div class="wf-box wf-header">Logo &nbsp;&nbsp;&nbsp; Nav: Home | Destinations | Travel Info | About</div>
+          <div class="wf-box wf-hero">Hero Image + Headline + Intro Text</div>
+          <div class="wf-row">
+            <div class="wf-box wf-card">Destination Card</div>
+            <div class="wf-box wf-card">Destination Card</div>
+            <div class="wf-box wf-card">Destination Card</div>
+          </div>
+          <div class="wf-box wf-footer">Footer: Social Links &nbsp;|&nbsp; Copyright</div>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jeremias Davison &mdash; WDD 231 Site Plan Document</p>
+  </footer>
+</body>
+</html>
