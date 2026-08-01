@@ -381,6 +381,191 @@ dialog.benefits-modal .modal-close:hover {
   background-color: var(--primary-color);
 }
 
+/* Chamber sub navigation (wayfinding between chamber pages) */
+
+.chamber-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  background-color: var(--secondary-color);
+  padding: 0 0.5rem;
+}
+
+.chamber-nav a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 0.9rem;
+  border-top: none;
+  border-radius: 0;
+}
+
+.chamber-nav a:hover,
+.chamber-nav a.current {
+  background-color: var(--primary-color);
+}
+
+/* Discover page */
+
+.visitor-message {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-left: 6px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.area-facts {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.area-facts li {
+  flex: 1 1 130px;
+  background-color: var(--light-color);
+  border-radius: 6px;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.fact-figure {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+/* Small screens (320px to 640px): one card per row */
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0;
+  border: 1px solid #d8d8d0;
+  overflow: hidden;
+}
+
+.discover-card h2 {
+  font-size: 1.15rem;
+}
+
+.discover-card figure {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.discover-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  max-height: 300px;
+  object-fit: cover;
+  flex: 1 1 auto;
+}
+
+.photo-source {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #5c5c5c;
+}
+
+.photo-credit {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  padding-top: 0.3rem;
+  font-size: 0.72rem;
+  color: #5c5c5c;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.learn-more {
+  align-self: flex-start;
+  margin-top: auto;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background-color: var(--primary-color);
+}
+
+/* Medium screens (641px to 1024px): two columns with wide first and last cards */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-areas:
+      "card1 card1"
+      "card2 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+  }
+}
+
+/* Large screens (1025px and above): mosaic with a featured card */
+
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card6"
+      "card7 card7 card8 card8";
+  }
+}
+
+/* Image hover effect for non-mobile views only */
+
+@media screen and (min-width: 641px) {
+  .discover-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .discover-card figure:hover img {
+    transform: scale(1.08);
+    filter: saturate(1.3) brightness(1.05);
+  }
+}
+
 /* Thank you page */
 
 #application-summary {
