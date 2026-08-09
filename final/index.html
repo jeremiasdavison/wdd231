@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Patagonia | Travel Guide to the Argentine Patagonia</title>
+  <meta name="description" content="Wild Patagonia is a travel guide to the Argentine Patagonia, with destinations, best seasons to visit, and a planner to build your own route.">
+  <meta name="author" content="Jeremias Davison">
+
+  <meta property="og:title" content="Wild Patagonia | Travel Guide to the Argentine Patagonia">
+  <meta property="og:description" content="Destinations, best seasons, and travel advice for the Argentine Patagonia, from Neuquen to Tierra del Fuego.">
+  <meta property="og:image" content="https://jeremiasdavison.github.io/wdd231/final/images/og-image.jpg">
+  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/final/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/home.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="brand">
+      <img class="logo" src="images/logo.svg" alt="Wild Patagonia logo" width="40" height="40">
+      <span class="site-name">Wild Patagonia</span>
+    </div>
+    <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav" aria-label="Main">
+      <a href="index.html" class="current" aria-current="page">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="plan.html">Plan Your Trip</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="hero">
+      <img src="images/hero.webp" alt="The front wall of the Perito Moreno Glacier in Los Glaciares National Park" width="1100" height="481" fetchpriority="high">
+      <div class="hero-text">
+        <h1>The Argentine Patagonia, one route at a time</h1>
+        <p>Seventeen destinations across four regions, with the best season to visit each one and how many days you should give it.</p>
+        <a class="button button-primary" href="destinations.html">Browse destinations</a>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="section-title">How this guide works</h2>
+      <p class="page-intro">Patagonia is larger than most countries, and the difference between a good trip and a hard one is usually the calendar. These three steps are how the site is meant to be used.</p>
+      <div class="step-grid">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Pick your regions</h3>
+          <p>The guide splits Patagonia into the Andes, the Atlantic Coast, the Steppe, and Tierra del Fuego. Distances between them are long, so most trips cover one or two.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Save the places you want</h3>
+          <p>Every destination card has a save button. Your list stays in this browser, so you can close the page and come back to it later.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Send your route</h3>
+          <p>The planner adds up the suggested days for everything you saved and sends the request with your travel dates and preferences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Featured destinations</h2>
+      <p class="page-intro">A starting point if this is your first trip south: six places that between them cover glaciers, granite peaks, whales, and the end of the road.</p>
+      <p class="notice" id="load-error" hidden>The destination list could not be loaded right now. Please refresh the page to try again.</p>
+      <div class="card-grid" id="featured-cards"></div>
+    </section>
+
+    <section class="home-split">
+      <div class="panel">
+        <h2 class="section-title">Before you go</h2>
+        <p>Patagonia runs on distances. Buses between the main towns take between four and fourteen hours, and the paved Route 40 has long stretches without fuel stations, so tanks are filled whenever one appears.</p>
+        <p>The seasons are inverted for northern hemisphere travelers: the summer high season runs from December to February, and most mountain services close between May and September. The wind blows hardest from October to January, and it is strong enough to change what a hiking day feels like.</p>
+        <p>Cash is still useful in small towns, and mobile coverage disappears inside the national parks. Park entrance fees are paid at the gate and are separate from any tour you book.</p>
+      </div>
+      <div>
+        <h2 class="section-title">Patagonia in numbers</h2>
+        <div class="fact-grid">
+          <div class="fact">
+            <span class="fact-figure">930,000</span>
+            square kilometres
+          </div>
+          <div class="fact">
+            <span class="fact-figure">5</span>
+            provinces
+          </div>
+          <div class="fact">
+            <span class="fact-figure">3,405 m</span>
+            Mount Tronador
+          </div>
+          <div class="fact">
+            <span class="fact-figure">2</span>
+            UNESCO world heritage sites
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h2 class="footer-heading">Wild Patagonia</h2>
+        <p>A travel guide to the Argentine Patagonia, built for WDD 231 at BYU-Idaho.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="attributions.html">Attributions</a>
+        <a href="../index.html">WDD 231 home page</a>
+      </nav>
+      <div>
+        <p>Buenos Aires, Argentina</p>
+        <div class="social">
+          <a href="https://github.com/jeremiasdavison" target="_blank" rel="noopener">
+            <img src="images/github.svg" alt="GitHub profile" width="28" height="28">
+          </a>
+          <a href="https://www.linkedin.com/in/jerem%C3%ADasdavison/" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="LinkedIn profile" width="28" height="28">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; <span id="year"></span> Jeremias Davison</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Request Received | Wild Patagonia</title>
+  <meta name="description" content="Confirmation page showing the details of the Patagonia trip request that was just submitted.">
+  <meta name="author" content="Jeremias Davison">
+
+  <meta property="og:title" content="Trip Request Received | Wild Patagonia">
+  <meta property="og:description" content="Confirmation of a Patagonia trip request sent through the Wild Patagonia planner.">
+  <meta property="og:image" content="https://jeremiasdavison.github.io/wdd231/final/images/og-image.jpg">
+  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/final/trip-summary.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/summary.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="brand">
+      <img class="logo" src="images/logo.svg" alt="Wild Patagonia logo" width="40" height="40">
+      <span class="site-name">Wild Patagonia</span>
+    </div>
+    <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="plan.html" class="current" aria-current="page">Plan Your Trip</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Trip request received</h1>
+    <p class="page-intro" id="greeting"></p>
+
+    <section class="panel">
+      <h2 class="section-title">What you sent us</h2>
+      <dl class="summary-list" id="summary"></dl>
+      <p class="total-days">We answer every request within two working days.</p>
+      <a class="button button-secondary" href="destinations.html">Keep exploring destinations</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h2 class="footer-heading">Wild Patagonia</h2>
+        <p>A travel guide to the Argentine Patagonia, built for WDD 231 at BYU-Idaho.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="attributions.html">Attributions</a>
+        <a href="../index.html">WDD 231 home page</a>
+      </nav>
+      <div>
+        <p>Buenos Aires, Argentina</p>
+        <div class="social">
+          <a href="https://github.com/jeremiasdavison" target="_blank" rel="noopener">
+            <img src="images/github.svg" alt="GitHub profile" width="28" height="28">
+          </a>
+          <a href="https://www.linkedin.com/in/jerem%C3%ADasdavison/" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="LinkedIn profile" width="28" height="28">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; <span id="year"></span> Jeremias Davison</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
+</body>
+</html>

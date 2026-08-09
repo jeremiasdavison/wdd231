@@ -1,0 +1,311 @@
+{
+  "destinations": [
+    {
+      "id": "bariloche",
+      "name": "San Carlos de Bariloche",
+      "province": "Rio Negro",
+      "region": "Andes",
+      "highlight": "Nahuel Huapi Lake and the Circuito Chico road",
+      "bestSeason": "December to March, and July for skiing",
+      "idealDays": 4,
+      "activities": [
+        "Hiking",
+        "Skiing",
+        "Kayaking",
+        "Chocolate tasting"
+      ],
+      "image": "images/bariloche.webp",
+      "featured": true,
+      "description": "Bariloche sits on the southern shore of Nahuel Huapi Lake and is the busiest gateway to the northern Patagonian Andes. The Circuito Chico loop links viewpoints, chairlifts, and beaches within an hour of the town center, and the Cerro Catedral ski area runs from June to September.",
+      "photoCredit": "Photo: Fernando, CC BY-SA 4.0"
+    },
+    {
+      "id": "villa-la-angostura",
+      "name": "Villa La Angostura",
+      "province": "Neuquen",
+      "region": "Andes",
+      "highlight": "Los Arrayanes National Park",
+      "bestSeason": "November to April",
+      "idealDays": 2,
+      "activities": [
+        "Hiking",
+        "Boat trips",
+        "Cycling"
+      ],
+      "image": "images/villa-la-angostura.webp",
+      "featured": false,
+      "description": "A quiet village of wooden houses on the Quetrihue Peninsula. A twelve kilometre trail, walkable or rideable, crosses the peninsula to a rare forest of cinnamon-barked arrayan trees that grows nowhere else at this density.",
+      "photoCredit": "Photo: gbelzunce_floyd, CC BY-SA 3.0"
+    },
+    {
+      "id": "san-martin-de-los-andes",
+      "name": "San Martin de los Andes",
+      "province": "Neuquen",
+      "region": "Andes",
+      "highlight": "Lacar Lake and the Seven Lakes Road",
+      "bestSeason": "November to April",
+      "idealDays": 3,
+      "activities": [
+        "Scenic driving",
+        "Fly fishing",
+        "Hiking"
+      ],
+      "image": "images/san-martin-de-los-andes.webp",
+      "featured": true,
+      "description": "The northern end of the Seven Lakes Road, a 110 kilometre paved route through Lanin National Park. The town itself faces Lacar Lake and keeps a strict building code, so every roof in the center is pitched wood and stone.",
+      "photoCredit": "Photo: Nsimean, CC0"
+    },
+    {
+      "id": "el-bolson",
+      "name": "El Bolson",
+      "province": "Rio Negro",
+      "region": "Andes",
+      "highlight": "Piltriquitron Mountain and the artisan market",
+      "bestSeason": "December to March",
+      "idealDays": 2,
+      "activities": [
+        "Hiking",
+        "Markets",
+        "Rafting"
+      ],
+      "image": "images/el-bolson.webp",
+      "featured": false,
+      "description": "A valley town of small farms, hop fields, and craft breweries between two mountain ranges. The artisan fair fills the main square three days a week, and the trail up Piltriquitron reaches a carved wood forest at 1,400 metres.",
+      "photoCredit": "Photo: Marcelo A. Gonzalez, CC BY-SA 4.0"
+    },
+    {
+      "id": "esquel",
+      "name": "Esquel",
+      "province": "Chubut",
+      "region": "Andes",
+      "highlight": "Los Alerces National Park and La Trochita steam train",
+      "bestSeason": "December to March",
+      "idealDays": 3,
+      "activities": [
+        "Hiking",
+        "Train rides",
+        "Fishing"
+      ],
+      "image": "images/esquel.webp",
+      "featured": false,
+      "description": "Esquel is the base for Los Alerces National Park, a UNESCO World Heritage site protecting alerce trees over 2,000 years old. The narrow gauge steam train known as La Trochita still runs tourist services from the town station.",
+      "photoCredit": "Photo: littletroll, CC BY-SA 3.0"
+    },
+    {
+      "id": "caviahue",
+      "name": "Caviahue and Copahue",
+      "province": "Neuquen",
+      "region": "Andes",
+      "highlight": "Copahue volcano and thermal pools",
+      "bestSeason": "December to March, and July to September for snow",
+      "idealDays": 2,
+      "activities": [
+        "Thermal baths",
+        "Hiking",
+        "Snowshoeing"
+      ],
+      "image": "images/caviahue.webp",
+      "featured": false,
+      "description": "Two small villages on the flank of an active volcano, surrounded by the only araucaria forests in Patagonia. Copahue is known for its sulphur pools and mud baths, which operate as a public spa during the summer months.",
+      "photoCredit": "Photo: rdjulieta, CC BY-SA 4.0"
+    },
+    {
+      "id": "el-chalten",
+      "name": "El Chalten",
+      "province": "Santa Cruz",
+      "region": "Andes",
+      "highlight": "Mount Fitz Roy and Laguna de los Tres",
+      "bestSeason": "November to March",
+      "idealDays": 4,
+      "activities": [
+        "Trekking",
+        "Climbing",
+        "Photography"
+      ],
+      "image": "images/el-chalten.webp",
+      "featured": true,
+      "description": "Argentina's trekking capital, founded in 1985 and built around trailheads rather than roads. Every major hike starts inside the village, including the ten hour round trip to Laguna de los Tres at the base of Fitz Roy.",
+      "photoCredit": "Photo: Hiroki Ogawa, CC BY 3.0"
+    },
+    {
+      "id": "el-calafate",
+      "name": "El Calafate",
+      "province": "Santa Cruz",
+      "region": "Andes",
+      "highlight": "Perito Moreno Glacier",
+      "bestSeason": "October to April",
+      "idealDays": 3,
+      "activities": [
+        "Glacier walks",
+        "Boat trips",
+        "Wildlife watching"
+      ],
+      "image": "images/el-calafate.webp",
+      "featured": true,
+      "description": "The town on Argentino Lake that serves Los Glaciares National Park. Perito Moreno is 80 kilometres away and one of the few glaciers in the world that is not retreating; steel walkways face its five kilometre front from a few hundred metres.",
+      "photoCredit": "Photo: Luca Galuzzi ( Lucag ), CC BY-SA 2.5"
+    },
+    {
+      "id": "ushuaia",
+      "name": "Ushuaia",
+      "province": "Tierra del Fuego",
+      "region": "Tierra del Fuego",
+      "highlight": "Beagle Channel and Tierra del Fuego National Park",
+      "bestSeason": "November to March, and June to September for skiing",
+      "idealDays": 4,
+      "activities": [
+        "Boat trips",
+        "Hiking",
+        "Skiing",
+        "Museums"
+      ],
+      "image": "images/ushuaia.webp",
+      "featured": true,
+      "description": "The southernmost city in the world, wedged between the Martial range and the Beagle Channel. Catamarans leave the pier daily for sea lion colonies and the Les Eclaireurs lighthouse, and the national park begins twelve kilometres west.",
+      "photoCredit": "Photo: Parikshit Sharma Photography, CC BY-SA 4.0"
+    },
+    {
+      "id": "puerto-madryn",
+      "name": "Puerto Madryn",
+      "province": "Chubut",
+      "region": "Atlantic Coast",
+      "highlight": "Southern right whales in Golfo Nuevo",
+      "bestSeason": "June to December for whales",
+      "idealDays": 3,
+      "activities": [
+        "Whale watching",
+        "Diving",
+        "Beaches"
+      ],
+      "image": "images/puerto-madryn.webp",
+      "featured": false,
+      "description": "A coastal city on a sheltered gulf where southern right whales come to breed every winter and spring. Boats leave from Puerto Piramides, and in calm weather the whales can be seen from the shore promenade itself.",
+      "photoCredit": "Photo: ElGuruCesar, CC BY-SA 4.0"
+    },
+    {
+      "id": "peninsula-valdes",
+      "name": "Peninsula Valdes",
+      "province": "Chubut",
+      "region": "Atlantic Coast",
+      "highlight": "Elephant seals, sea lions, and orcas",
+      "bestSeason": "September to April",
+      "idealDays": 2,
+      "activities": [
+        "Wildlife watching",
+        "Scenic driving",
+        "Photography"
+      ],
+      "image": "images/peninsula-valdes.webp",
+      "featured": true,
+      "description": "A UNESCO World Heritage site of gravel roads, salt flats, and cliffs holding one of the largest elephant seal colonies outside Antarctica. Between February and April, orcas hunt sea lion pups at Punta Norte at high tide.",
+      "photoCredit": "Photo: Scann, CC BY-SA 4.0"
+    },
+    {
+      "id": "punta-tombo",
+      "name": "Punta Tombo",
+      "province": "Chubut",
+      "region": "Atlantic Coast",
+      "highlight": "The largest Magellanic penguin colony on the continent",
+      "bestSeason": "September to March",
+      "idealDays": 1,
+      "activities": [
+        "Wildlife watching",
+        "Photography"
+      ],
+      "image": "images/punta-tombo.webp",
+      "featured": false,
+      "description": "More than half a million Magellanic penguins nest along three kilometres of this gravel headland between September and March. A raised boardwalk keeps visitors above the burrows while the birds cross freely underneath.",
+      "photoCredit": "Photo: Natasha Gownaris, CC BY-SA 4.0"
+    },
+    {
+      "id": "puerto-deseado",
+      "name": "Puerto Deseado",
+      "province": "Santa Cruz",
+      "region": "Atlantic Coast",
+      "highlight": "The Deseado estuary and Penguin Island",
+      "bestSeason": "October to March",
+      "idealDays": 2,
+      "activities": [
+        "Boat trips",
+        "Wildlife watching",
+        "Kayaking"
+      ],
+      "image": "images/puerto-deseado.webp",
+      "featured": false,
+      "description": "A fishing port on a drowned river valley that shelters Commerson's dolphins, four penguin species, and a colony of rockhopper penguins on Isla Pinguino. Boat trips run from the town pier and last about half a day.",
+      "photoCredit": "Photo: Andreacav7, CC BY-SA 4.0"
+    },
+    {
+      "id": "cueva-de-las-manos",
+      "name": "Cueva de las Manos",
+      "province": "Santa Cruz",
+      "region": "Steppe",
+      "highlight": "Rock art painted more than 9,000 years ago",
+      "bestSeason": "October to April",
+      "idealDays": 1,
+      "activities": [
+        "Guided tours",
+        "Canyon hiking",
+        "Photography"
+      ],
+      "image": "images/cueva-de-las-manos.webp",
+      "featured": false,
+      "description": "Hundreds of stencilled hands cover a rock overhang above the Pinturas River canyon, painted by hunter-gatherer groups over roughly 7,000 years. Access is by guided tour only, from Perito Moreno town or Bajo Caracoles.",
+      "photoCredit": "Photo: Mariano, Public domain"
+    },
+    {
+      "id": "los-antiguos",
+      "name": "Los Antiguos",
+      "province": "Santa Cruz",
+      "region": "Steppe",
+      "highlight": "Cherry orchards on Buenos Aires Lake",
+      "bestSeason": "December to February",
+      "idealDays": 2,
+      "activities": [
+        "Farm visits",
+        "Cycling",
+        "Fishing"
+      ],
+      "image": "images/los-antiguos.webp",
+      "featured": false,
+      "description": "A green strip of fruit farms on the southern shore of Buenos Aires Lake, the second largest lake in South America. The cherry harvest peaks in January and the town holds a festival for it every summer.",
+      "photoCredit": "Photo: Claudio Elias, Public domain"
+    },
+    {
+      "id": "gaiman",
+      "name": "Gaiman and Trelew",
+      "province": "Chubut",
+      "region": "Steppe",
+      "highlight": "Welsh tea houses and the Egidio Feruglio dinosaur museum",
+      "bestSeason": "All year",
+      "idealDays": 2,
+      "activities": [
+        "Museums",
+        "Tea houses",
+        "History walks"
+      ],
+      "image": "images/gaiman.webp",
+      "featured": false,
+      "description": "The Chubut valley was settled by Welsh colonists in 1865 and the language is still taught in local schools. Gaiman keeps the tea house tradition, while Trelew holds the palaeontology museum that described Patagotitan, one of the largest dinosaurs found.",
+      "photoCredit": "Photo: Wikisanchez, CC BY 3.0"
+    },
+    {
+      "id": "sarmiento",
+      "name": "Sarmiento",
+      "province": "Chubut",
+      "region": "Steppe",
+      "highlight": "The Sarmiento petrified forest",
+      "bestSeason": "October to April",
+      "idealDays": 1,
+      "activities": [
+        "Guided tours",
+        "Photography",
+        "Fishing"
+      ],
+      "image": "images/sarmiento.webp",
+      "featured": false,
+      "description": "Trunks up to three metres wide lie where they fell 65 million years ago, turned to stone in a badland of red and grey clay. A marked circuit crosses the reserve, thirty kilometres south of the town on a gravel road.",
+      "photoCredit": "Photo: Eassi, CC BY 3.0"
+    }
+  ]
+}

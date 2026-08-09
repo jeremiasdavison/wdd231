@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip | Wild Patagonia</title>
+  <meta name="description" content="Review the Patagonian destinations you saved, see how many days the route needs, and send your trip request with dates, group size, and travel style.">
+  <meta name="author" content="Jeremias Davison">
+
+  <meta property="og:title" content="Plan Your Trip | Wild Patagonia">
+  <meta property="og:description" content="Turn the destinations you saved into a route and send your Patagonia trip request.">
+  <meta property="og:image" content="https://jeremiasdavison.github.io/wdd231/final/images/og-image.jpg">
+  <meta property="og:url" content="https://jeremiasdavison.github.io/wdd231/final/plan.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/plan.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="brand">
+      <img class="logo" src="images/logo.svg" alt="Wild Patagonia logo" width="40" height="40">
+      <span class="site-name">Wild Patagonia</span>
+    </div>
+    <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="plan.html" class="current" aria-current="page">Plan Your Trip</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Plan your trip</h1>
+    <p class="page-intro">Tell us when you are coming and what you saved, and we will answer with a route, transport times between the stops, and where you should book ahead.</p>
+
+    <p class="notice" id="welcome-back" hidden></p>
+
+    <div class="plan-layout">
+      <section class="panel">
+        <h2 class="section-title">Trip request</h2>
+        <form class="trip-form" id="trip-form" method="get" action="trip-summary.html">
+          <label class="full-width" for="destinations">Destinations you saved
+            <input type="text" id="destinations" name="destinations" readonly>
+          </label>
+
+          <label for="first-name">First name
+            <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+          </label>
+
+          <label for="last-name">Last name
+            <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+          </label>
+
+          <label for="email">Email
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+
+          <label for="phone">Phone
+            <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+\-\s]{7,20}" title="Use digits, spaces, plus and hyphen only, from 7 to 20 characters.">
+            <span class="hint">Optional. Digits, spaces, + and - only.</span>
+          </label>
+
+          <label for="start-date">Arrival date
+            <input type="date" id="start-date" name="startDate" required>
+          </label>
+
+          <label for="travelers">Number of travelers
+            <input type="number" id="travelers" name="travelers" min="1" max="12" value="2" required>
+          </label>
+
+          <label class="full-width" for="style">Travel style
+            <select id="style" name="style" required>
+              <option value="">Choose one</option>
+              <option value="Camping and refuges">Camping and refuges</option>
+              <option value="Hostels and guest houses">Hostels and guest houses</option>
+              <option value="Hotels">Hotels</option>
+              <option value="A mix of everything">A mix of everything</option>
+            </select>
+          </label>
+
+          <fieldset class="full-width">
+            <legend>Preferred transport</legend>
+            <label class="choice" for="transport-car">
+              <input type="radio" id="transport-car" name="transport" value="Rental car" required>
+              Rental car
+            </label>
+            <label class="choice" for="transport-bus">
+              <input type="radio" id="transport-bus" name="transport" value="Long distance bus">
+              Long distance bus
+            </label>
+            <label class="choice" for="transport-flights">
+              <input type="radio" id="transport-flights" name="transport" value="Flights and transfers">
+              Flights and transfers
+            </label>
+          </fieldset>
+
+          <label class="full-width" for="notes">Anything we should know
+            <textarea id="notes" name="notes" rows="4" placeholder="Trekking experience, mobility needs, fixed dates..."></textarea>
+          </label>
+
+          <label class="choice full-width" for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            Send me the seasonal Patagonia newsletter
+          </label>
+
+          <button class="button button-primary form-submit full-width" type="submit">Send trip request</button>
+        </form>
+      </section>
+
+      <aside class="panel">
+        <h2 class="section-title">Your saved route</h2>
+        <p class="notice" id="empty-trip" hidden>You have not saved anything yet. Go to the <a href="destinations.html">destinations page</a> and use the save button on any card.</p>
+        <ul class="saved-list" id="saved-list"></ul>
+        <p class="total-days" id="total-days"></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h2 class="footer-heading">Wild Patagonia</h2>
+        <p>A travel guide to the Argentine Patagonia, built for WDD 231 at BYU-Idaho.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="attributions.html">Attributions</a>
+        <a href="../index.html">WDD 231 home page</a>
+      </nav>
+      <div>
+        <p>Buenos Aires, Argentina</p>
+        <div class="social">
+          <a href="https://github.com/jeremiasdavison" target="_blank" rel="noopener">
+            <img src="images/github.svg" alt="GitHub profile" width="28" height="28">
+          </a>
+          <a href="https://www.linkedin.com/in/jerem%C3%ADasdavison/" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="LinkedIn profile" width="28" height="28">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; <span id="year"></span> Jeremias Davison</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
+</body>
+</html>
